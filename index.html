@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Panzer Controller</title>
+    <link rel="stylesheet" type="text/css" href="libs/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="style/app.css">
+  </head>
+  <body>
+
+  <div id="display">
+
+    <div class="row">
+      <div class="col-1">
+        <i id="volumeLevelIcon" class="fas fa-volume-down"></i>
+      </div>
+      <div class="col-1">
+        <i id="playIcon" class="fas fa-play"></i>
+      </div>
+      <div class="col-2">
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="40" class="slider" id="musicPlayerSlider">
+        </div>
+      </div>
+
+      <div class="col-4">
+      </div>
+
+      <div class="col-1 text-right">
+        IP:
+      </div>
+
+      <div id="connectionAddressContainer" class="col-2 text-left">
+        <div>no-connection</div>
+      </div>
+      <div class="col-1">
+        <i id="connectionIcon" class="fas fa-car"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-right">
+        <div>Speed Dif</div>
+      </div>
+      <div class="col text-left">
+        <div id="motorPowerDifferenceValue"></div>
+      </div>
+      <div class="w-100"></div>
+      <div class="col">
+        <div class="slidecontainer">
+          <input type="range" min="-10" max="10" value="0" class="slider" id="motorPowerDifferenceSlider">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3">
+        <div class="row">
+          <div class="col text-right">
+            <div>LSpeed</div>
+          </div>
+          <div class="col text-left">
+            <div id="leftSpeedValue"></div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col">
+            <div class="slidecontainer">
+              <input type="range" min="-100" max="100" value="0" class="slider sliderVertical" id="leftSpeedSlider">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div id="infoArea" class="row">
+          <div id="motorSpeeds" class="col-4">Speeds</div>
+          <div id="dump" class="col-9"></div>
+        </div>
+        <div id="joystickArea" class="row">
+          <div id="joystickAreaContainer"></div>
+
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="row">
+          <div class="col text-right">
+            <div>RSpeed</div>
+          </div>
+          <div class="col text-left">
+            <div id="rightSpeedValue"></div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col">
+            <div class="slidecontainer">
+              <input type="range" min="-100" max="100" value="0" class="slider sliderVertical" id="rightSpeedSlider">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Insert this line above script imports  -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- normal script imports etc  -->
+  <script src="libs/js/joystick.js"></script>
+    <script src="libs/js/jquery-3.3.1.min.js"></script>
+    <script src="libs/js/bootstrap.min.js"></script>
+    <script>
+        // You can also require other files to run in this process
+        require('./renderer.js');
+    </script>
+
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+
+  </body>
+</html>

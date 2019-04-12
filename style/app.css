@@ -62,3 +62,16 @@
 #infoArea {
     font-size: x-small;
 }
+
+#discoverButton
+{
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 0px 0px 3px grey;
+}
+
+#discoverButton:hover
+{
+    color: #23ab98;
+    box-shadow: 0px 0px 3px #23ab98;
+}

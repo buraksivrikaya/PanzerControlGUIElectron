@@ -4,7 +4,8 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "startSim": "node nodeMCUSimilator.js"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,10 +18,10 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^2.0.0",
-    "lame": "^1.2.4",
+    "electron": "^2.0.2",
+    "electron-rebuild": "^1.7.3",
+    "express": "^4.16.4",
     "nipplejs": "^0.6.8",
-    "node-mp3-player": "^1.0.3",
-    "speaker": "^0.4.1"
+    "serialport": "^6.2.0"
   }
 }

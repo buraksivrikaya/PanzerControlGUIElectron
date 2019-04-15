@@ -118,7 +118,5 @@ function sendMessage(message)
         previousMessage = message;
     }
 }
-var m = -1024;
-setInterval(function(){m += 1; 
-var testMessage = m + '|0'; 
-sendMessage(messageToSend)}, messageDelay);
+
+setInterval(function(){sendMessage(messageToSend)}, messageDelay);

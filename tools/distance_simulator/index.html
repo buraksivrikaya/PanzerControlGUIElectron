@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Distance Simulator</title>
+        <link rel="stylesheet" type="text/css" href="../../libs/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../libs/css/fontawesome-all.min.css">
+        <link rel="stylesheet" type="text/css" href="./style/app.css">
+    </head>
+<body>
+<div id="appContainer">
+    <div class="title row">
+        <h2>Panzer Gap Simulator</h2>
+    </div>
+    <hr>
+    <div class="row">
+        <div id="gapContainer" class="col-10">
+            <div class="row">
+                <div class="col-4"></div>
+                <div id="frontGap" class="gapEl col-4"></div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row">
+                <div id="leftGap" class="gapEl col-4"></div>
+                <div id="chasis" class="gapEl col-4"></div>
+                <div id="rightGap" class="gapEl col-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div id="backGap" class="gapEl col-4"></div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+        <div id="gapMeasuresContainer" class="col-2">
+            <div class="smallText">Gap Color Range</div>
+        </div>
+    </div>
+    <div id="console" class="row">
+        Panzer gap simulator is initialised...</br>
+    </div>
+</div>
+</body>
+    <!-- Insert this line above script imports  -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- normal script imports etc  -->
+    <script src="../../libs/js/jquery-3.3.1.min.js"></script>
+    <script src="../../libs/js/bootstrap.min.js"></script>
+    <script>
+        // You can also require other files to run in this process
+        require('./renderer.js');
+    </script>
+
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+</html>

@@ -1,0 +1,68 @@
+body
+{
+    background: #BBCFDC;
+}
+#appContainer
+{
+    padding: 10px;
+    margin: 15px;
+}
+
+#appContainer .title *
+{
+    color:#eeeeee;
+    text-align: center;
+    margin: 0px auto 0px auto;
+}
+
+#gapContainer
+{
+    padding: 20px;
+    width: 300px;
+}
+#gapContainer .row
+{
+    margin: 0px auto 0px auto;
+    height: 100px;
+    width: 300px;
+}
+
+#gapContainer .gapEl
+{
+    height: 100px;
+    width: 100px;
+    background-color: #8f67bf;
+}
+
+#gapContainer #chasis
+{
+    background-color: #4e555b;
+}
+
+#console
+{
+    color: white;
+    background-color: black;
+    height: 150px;
+    text-align: left;
+    font-size: small;
+    padding: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#gapMeasuresContainer
+{
+    padding: 5px;
+}
+
+#gapMeasuresContainer .colorPaletteElement
+{
+    height: 20px;
+    margin-top: 7px;
+}
+
+#gapMeasuresContainer .smallText
+{
+    font-size:x-small;
+    color: whitesmoke;
+}

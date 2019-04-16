@@ -1,0 +1,5 @@
+to start gap simulator
+$ npm start
+
+to start message generator test, go to tools folder
+$ node testDistance.js
